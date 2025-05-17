@@ -27,6 +27,8 @@ class Members(models.Model):
     ]
     year = models.CharField(choices=year_choices)
     branch = models.CharField(choices=branch_choices)
+    def __str__(self):
+        return f"{self.name}:{self.usn}"
 
 class books(models.Model):
     bookname  = models.CharField(max_length=100)
