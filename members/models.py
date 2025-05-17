@@ -31,7 +31,7 @@ class Members(models.Model):
 class books(models.Model):
     bookname  = models.CharField(max_length=100)
     bookid = models.CharField(max_length=15,primary_key=True)
-    price  = models.DecimalField(max_digits=5,decimal_places=3)
+    price  = models.DecimalField(max_digits=6,decimal_places=4)
 
 class blogs(models.Model):
     name  = models.CharField(max_length=100)
